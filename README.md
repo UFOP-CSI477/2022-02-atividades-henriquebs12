@@ -6,7 +6,7 @@
 - Matrícula: 19.2.8007
 - Curso: Sistemas de Informação
 - Semestre/Ano correntes: 2022-02
-- Link para o seu GitHub: /henriquebs12
+- Link para o seu GitHub: [/henriquebs12](https://github.com/henriquebs12)
 
 ## [Projeto final:](./Projeto/README.md)
 
