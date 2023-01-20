@@ -12,6 +12,6 @@
 
 Plataforma para criação de múltiplos jogos educacionais para alunos do Ensino Fundamental. A ideia é construir um sistema que permita o usuário (professor) criar jogos personalizados que façam sentido com o conteúdo que está sendo dado (por exemplo animais, cores, símbolos, lugares, etc). 
 
-Ao publicar um jogo, ele fica disponível para os alunos realizarem através de login ou de um link externo. Ao realizar o jogo, as estatísticas das jogadas são armazenadas para que o professor possa consultar o desempenho individual no sistema.
+Ao publicar um jogo, ele fica disponível para os alunos realizarem através de login ou de um link externo. Ao realizar o jogo, as estatísticas das jogadas são armazenadas para que o professor possa consultar o desempenho individual dos alunos no sistema.
 
 Tentarei implementar pelo menos 2 jogos diferentes: Jogo da Memória e Ligue as Colunas.
