@@ -14,4 +14,4 @@ Plataforma para criação de múltiplos jogos educacionais para alunos do Ensino
 
 Ao publicar um jogo, ele fica disponível para os alunos realizarem através de login ou de um link externo. Ao realizar o jogo, as estatísticas das jogadas são armazenadas para que o professor possa consultar o desempenho individual dos alunos no sistema.
 
-Tentarei implementar pelo menos 2 jogos diferentes: Jogo da Memória e Ligue as Colunas.
+Tentarei implementar pelo menos o fluxo de criação de um Jogo da Memória. Se ainda sobrar tempo, implementarei também um jogo simples do tipo Ligue as Colunas.
