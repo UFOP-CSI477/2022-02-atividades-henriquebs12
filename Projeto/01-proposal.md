@@ -13,7 +13,7 @@ O novo escopo do trabalho consiste em uma plataforma que faz a gestão de discip
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-De uma plataforma de gestão de disciplinas cursadas em um semestre e da recomendação da melhor linha para que chegue a aula sem atrasos.
+Um projeto consiste em uma plataforma para gestão de disciplinas cursadas ao longo dos semestres e da recomendação da melhor linha para que o aluno chegue a aula sem atrasos.
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
