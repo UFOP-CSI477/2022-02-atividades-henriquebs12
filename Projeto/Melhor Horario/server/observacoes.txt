@@ -1,0 +1,77 @@
+[INSTALAÇÃO]
+cd server
+npm install
+npm start --dev
+npm install @prisma/client
+
+•) Adicionar no arquivo .env para novas instalações da pasta "server/":
+DATABASE_URL="file:./aplicacao.sqlite"
+
+[POPULAR BANCO]
+cd server
+npm run seed
+
+[RODAR SERVIDOR]
+cd server
+npm start --dev
+
+Gerenciar na interface o banco de dados:
+npx prisma studio
+
+[PRISMA] Criar as migrações:
+npx prisma migrate reset // para dropar tudo
+npx prisma migrate dev // mudanças no schema do banco
+
+
+[OUTROS COMANDOS]
+Instalações de pacotes diferente do que foi dado em sala:
+•) npm install express body-parser cors
+•) npm install --save-dev nodemon eslint prettier
+
+nodemon: para reiniciar automaticamente a aplicação quando houver mudanças no código;
+eslint: para padronizar o estilo de escrita do código;
+prettier: para formatar o código automaticamente.
+
+Instalar nodemon apenas para rodar "npm start --dev"
+npm install --save-dev nodemon
+
+[erros prisma]
+Error: The default query engine type (Node-API, "library") is currently not supported for 32bit Node. Please set `engineType = "binary"` in the "generator" 
+block of your "schema.prisma" file (or use the environment variables "PRISMA_CLIENT_ENGINE_TYPE=binary" and/or "PRISMA_CLI_QUERY_ENGINE_TYPE=binary".)
+[resolução]
+set PRISMA_CLI_QUERY_ENGINE_TYPE=binary
+set PRISMA_CLIENT_ENGINE_TYPE=binary
+npx prisma migrate dev
+npm run seed
+-----------------
+ENTIDADES:
+
+Aluno: representa um aluno e possui um nome. Pode estar associado a várias disciplinas.
+Disciplina: representa uma disciplina e possui um nome, semestre, sala e vários horários. Pode estar associada a vários alunos e tem vários horários.
+Horário: representa um horário para uma disciplina em um dia específico da semana. Possui um dia da semana, uma hora de início, e está associado a uma disciplina e uma linha de ônibus.
+Linha: representa uma linha de ônibus e possui um nome e vários horários. Cada horário está associado a uma linha específica.
+Tempo: representa o tempo que uma linha de ônibus leva para chegar a um ponto de controle. Possui um valor de tempo e está associado a uma linha de ônibus.
+Os relacionamentos entre as entidades são os seguintes:
+
+
+
+RELACIONAMENTOS:
+
+Aluno e Disciplina: relação muitos-para-muitos através da tabela intermediária DisciplinaAluno.
+Disciplina e Horário: relação um-para-muitos.
+Horário e Linha: relação muitos-para-um.
+Linha e Tempo: relação um-para-muitos.
+
+
+
+DESCRICAO DO PROJETO:
+
+O objetivo do projeto é criar um sistema capaz de recomendar a melhor linha de ônibus para um aluno pegar, considerando o horário de início da disciplina, o tempo que o ônibus leva do horário de partida até um ponto de controle e do ponto de controle até a universidade.
+O projeto será desenvolvido em Node.js, utilizando o framework Express no backend e React e Vite no frontend.
+Não será necessário fazer login. O usuário poderá cadastrar um novo semestre e suas disciplinas e horários, bem como as linhas de ônibus disponíveis e seus horários de partida.
+O modelo do banco de dados foi definido utilizando o Prisma e possui as seguintes entidades:
+Aluno: possui um nome e pode estar associado a várias disciplinas.
+Disciplina: possui um nome, semestre, sala, vários horários e vários alunos associados.
+Horário: possui um dia, uma hora, uma linha de ônibus e uma disciplina associada.
+Linha: possui um nome, vários horários e vários tempos de viagem associados.
+Tempo: possui a duração da viagem de uma linha de ônibus até um ponto de controle específico.
