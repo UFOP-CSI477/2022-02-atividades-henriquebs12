@@ -36,18 +36,18 @@ npm install @prisma/client
 Adicionar no arquivo .env para novas instalações da pasta "server/":
 DATABASE_URL="file:./aplicacao.sqlite"
 
-[POPULAR BANCO]
-cd server
-npm run seed
+**[POPULAR BANCO]**<br>
+`cd server`<br>
+`npm run seed`<br>
 
-[RODAR SERVIDOR]
-cd server
-npm start --dev
+**[RODAR SERVIDOR]**<br>
+`cd server`<br>
+`npm start --dev`<br>
 
-[INSTALAÇÃO FRONT-END]
-cd melhor-horario-front
-npm install
-npm run start
+**[INSTALAÇÃO FRONT-END]**<br>
+`cd melhor-horario-front`<br>
+`npm install`<br>
+`npm run start`<br>
 
 ### 6. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
