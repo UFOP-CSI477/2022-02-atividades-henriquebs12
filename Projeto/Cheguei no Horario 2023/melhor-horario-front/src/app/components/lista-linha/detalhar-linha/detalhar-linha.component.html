@@ -1,0 +1,54 @@
+<h2 mat-dialog-title>Horários da linha {{ idLinha }}</h2>
+    <div mat-dialog-content>
+      
+
+      <div class="content">
+        <div class="form">
+          <form [formGroup]="formulario">
+            <mat-form-field class="full-width-field">
+              <input matInput placeholder="Digite um horario" formControlName="horario">
+            </mat-form-field>
+  
+            <button class="ms-2 primary" mat-raised-button color="primary" (click)="adicionarHorario()"
+              [disabled]="formulario.invalid">
+              <mat-icon>add</mat-icon> Adicionar
+            </button>
+          </form>
+  
+        </div>
+        <div class="tabela">
+          <table mat-table [dataSource]="horarios" class="">
+  
+            <!-- ID Column -->
+            <ng-container matColumnDef="dia">
+              <th mat-header-cell *matHeaderCellDef> Dia </th>
+              <td mat-cell *matCellDef="let horario"> {{horario.dia}} </td>
+            </ng-container>
+  
+            <!-- Name Column -->
+            <ng-container matColumnDef="horario">
+              <th mat-header-cell *matHeaderCellDef> Horario </th>
+              <td mat-cell *matCellDef="let horario"> {{horario.horario}} </td>
+            </ng-container>
+  
+            <!-- Actions Column -->
+            <ng-container matColumnDef="acoes">
+              <th mat-header-cell *matHeaderCellDef class="text-center"> Ações </th>
+              <td mat-cell *matCellDef="let horario" class="text-center">
+                <button class="secondary small" mat-raised-button color="warn" (click)="deletarHorario(horario.id)">
+                  <mat-icon>delete_outline</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div mat-dialog-actions >
+      <button class="secondary" mat-button (click)="onOkClick()">Cancelar</button>
+      <button class="primary" mat-button (click)="onCancelClick()">OK</button>
+
+    </div>

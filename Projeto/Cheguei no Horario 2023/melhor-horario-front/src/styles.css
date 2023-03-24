@@ -1,0 +1,201 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+
+/* CSS personalizado para o projeto: */
+nav {
+    height: 80px;
+}
+
+body {
+    background-color: #F5F7F9;
+}
+
+
+.custom-nav-image-container {
+    width: 32px;
+    height: 32px;
+
+}
+
+.corpo-principal {
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 16px;
+    box-shadow: 0px 1px 1px rgba(58, 66, 68, 0.15), 0px 2px 5px 1px rgba(90, 103, 106, 0.1);
+}
+
+.content {
+    padding: 32px;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 18px;
+    vertical-align: middle;
+    border-radius: 4px;
+    padding: 8px 15px;
+    height: 56px;
+    border: none;
+
+}
+
+button.small {
+    padding: 4px 8px;
+    height: auto;
+}
+
+button.primary {
+    color: white;
+    background-color: #00718A;
+    box-shadow: 0px 1px 2px rgba(58, 66, 68, 0.1);
+}
+
+button.secondary {
+    color: #5C6270;
+    background-color: white;
+    border: 1px solid #D4D4D4;
+    box-shadow: 0px 1px 2px rgba(58, 66, 68, 0.1);
+}
+
+
+/* CSS personalizado do navbar do Bootstrap*/
+.nav-item:hover {
+background-color: #0000000f;
+    border-radius: 8px;
+}
+
+/* CSS personalizado do Material Design */
+.mat-mdc-table .mdc-data-table__header-row {
+    background-color: #FAFAFA;
+    text-transform: uppercase;
+}
+
+.mat-mdc-header-cell.mdc-data-table__header-cell {
+    color: #5C6270;
+    font-size: 14px
+}
+
+.mat-mdc-table {
+    border-radius: 8px;
+    border: 1px solid #E9E9E9 !important;
+    border-collapse: separate;
+    overflow: hidden;
+    box-shadow: 0px 1px 2px rgba(58, 66, 68, 0.1);
+}
+
+
+.mat-mdc-tab-list {
+    border-bottom: 2px solid #E9E9E9;
+}
+
+
+/* CSS personalizado da tela de Cronograma */
+.grade-container {
+    padding: 20px;
+}
+
+.proj-custom-label {
+    color: #747985;
+}
+
+.empty-box {
+    width: 100%;
+    height: 200px;
+    color: #747985;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.grade-container table {
+    border-spacing: 16px;
+}
+
+.grade-container table td.mat-mdc-cell {
+    height: 64px;
+    border: 1px solid #E9E9E9;
+    background-color: #FAFAFA;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #424242;
+}
+
+/* Remove bordas das tabelas do material */
+.grade-container .mdc-data-table__header-cell {
+    border: none !important;
+}
+
+.grade-container .mat-mdc-table .mdc-data-table__header-row {
+    background-color: white;
+}
+
+.grade-container .mdc-data-table__header-cell {
+    text-align: center;
+}
+
+/* Estiliza ícone */
+.proj-label-onibus {
+    display: inline-flex;
+    color: #00667C;
+    font-weight: bold;
+    align-items: center;
+    background-color: #E5F1F3;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+.proj-label-onibus .mat-icon {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+}
+.grade-container table td.mat-mdc-cell.proj-horario-column {
+    background-color: white;
+    border: none;
+    color: #747985;
+    text-align: right;
+}
+/* Sobreescrevendo cores primárias do material */
+.mat-mdc-radio-button.mat-accent {
+    --mdc-radio-selected-focus-icon-color: #00718A;
+    --mdc-radio-selected-hover-icon-color: #00718A;
+    --mdc-radio-selected-icon-color: #00718A;
+    --mdc-radio-selected-pressed-icon-color: #00718A;;
+    --mat-mdc-radio-checked-ripple-color: #00718A;
+}
+
+.mat-primary  {
+    color: #00718a!important;
+}
+.mat-mdc-tab .mat-ripple-element, .mat-mdc-tab-header-pagination .mat-ripple-element, .mat-mdc-tab-link .mat-ripple-element {
+background-color: #00718a;
+}
+
+.mat-mdc-dialog-actions, .mdc-dialog__actions {
+    justify-content: end!important;
+    padding: 16px!important;
+    border-top: 1px solid #ccc!important;
+    gap: 16px;
+}

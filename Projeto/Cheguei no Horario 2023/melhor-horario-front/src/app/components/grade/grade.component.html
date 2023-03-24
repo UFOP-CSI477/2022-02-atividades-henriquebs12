@@ -1,0 +1,100 @@
+<div class="container-fluid">
+  <div class="grade-container">
+
+    <p class="fs-2 fw-bold mb-4">Seja bem-vindo! <img width="32" class="mb-2" src="../assets/hand-ios.png"></p>
+    <p class="fs-6 fw-bold mb-1 proj-custom-label">Quem é você?</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Selecione um aluno</mat-label>
+      <mat-select [(ngModel)]="idAluno" (ngModelChange)="filterChanged()">
+        <mat-option *ngFor="let aluno of alunos" [value]="aluno.id">{{ aluno.nome }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <p class="fs-6 fw-bold mb-1 proj-custom-label">Qual semestre você está?</p>
+    <mat-radio-group [(ngModel)]="idSemestre" aria-label="Select uma opção" (change)="filterChanged()">
+      <mat-radio-button class="me-2" *ngFor="let s of semestres" [value]="s.id">{{ s.nome }}</mat-radio-button>
+    </mat-radio-group>
+    <div class="cronograma-box">
+      <div class="tabela" *ngIf="idAluno != '' && idSemestre != ''; else selecione">
+
+        <p class="fs-5 fw-bold mt-4 text-center"> Cronograma de aulas - {{ nomeSemestre }}</p>
+
+        <table mat-table [dataSource]="dataSource" class="proj-table">
+
+          <!-- Horario Column -->
+          <ng-container matColumnDef="horario">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td style="width: 50px" class="proj-horario-column" mat-cell *matCellDef="let disciplina"> {{disciplina.horario}} </td>
+          </ng-container>
+
+          <!-- Segunda-Feira Column -->
+          <ng-container matColumnDef="segunda">
+            <th mat-header-cell *matHeaderCellDef> Segunda-Feira </th>
+            <td style="width: 160px" mat-cell *matCellDef="let disciplina">
+              <span *ngIf="disciplina.Segunda != {}">{{ disciplina.Segunda.nome }}</span><br>
+              <div class="proj-label-onibus" *ngIf="disciplina.Segunda.melhorLinha != undefined"><mat-icon> directions_bus</mat-icon>
+                {{ disciplina.Segunda.melhorLinha }}
+              </div>
+            </td>
+          </ng-container>
+
+          <!-- Terça-Feira Column -->
+          <ng-container matColumnDef="terca">
+            <th mat-header-cell *matHeaderCellDef> Terça-Feira </th>
+            <td style="width: 160px" mat-cell *matCellDef="let disciplina">
+              <span *ngIf="disciplina.Terca != {}">{{ disciplina.Terca.nome }}</span><br>
+
+              <div class="proj-label-onibus" *ngIf="disciplina.Terca.melhorLinha != undefined"><mat-icon> directions_bus</mat-icon>
+                {{ disciplina.Terca.melhorLinha }}
+              </div>
+            </td>
+          </ng-container>
+
+          <!-- Quarta-Feira Column -->
+          <ng-container matColumnDef="quarta">
+            <th mat-header-cell *matHeaderCellDef> Quarta-Feira </th>
+            <td style="width: 160px" mat-cell *matCellDef="let disciplina">
+              <span *ngIf="disciplina.Quarta != {}">{{ disciplina.Quarta.nome }}</span><br>
+
+              <div class="proj-label-onibus" *ngIf="disciplina.Quarta.melhorLinha != undefined"><mat-icon> directions_bus</mat-icon>
+                {{ disciplina.Quarta.melhorLinha }}
+              </div>
+            </td>
+          </ng-container>
+
+          <!-- Quinta-Feira Column -->
+          <ng-container matColumnDef="quinta">
+            <th mat-header-cell *matHeaderCellDef> Quinta-Feira </th>
+            <td style="width: 160px" mat-cell *matCellDef="let disciplina">
+              <span *ngIf="disciplina.Quinta != {}">{{ disciplina.Quinta.nome }}</span><br>
+
+              <div class="proj-label-onibus" *ngIf="disciplina.Quinta.melhorLinha != undefined"><mat-icon> directions_bus</mat-icon>
+                {{ disciplina.Quinta.melhorLinha }}
+              </div>
+            </td>
+          </ng-container>
+
+          <!-- Sexta-Feira Column -->
+          <ng-container matColumnDef="sexta">
+            <th mat-header-cell *matHeaderCellDef> Sexta-Feira </th>
+            <td style="width: 160px" mat-cell *matCellDef="let disciplina">
+              <span *ngIf="disciplina.Sexta != {}">{{ disciplina.Sexta.nome }}</span><br>
+               <div class="proj-label-onibus" *ngIf="disciplina.Sexta.melhorLinha != undefined"><mat-icon> directions_bus</mat-icon>
+                {{ disciplina.Sexta.melhorLinha }}
+              </div>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    </div>
+
+    <ng-template #selecione>
+      <div class="empty-box mt-3"> <mat-icon class="mb-2">info</mat-icon>Selecione um aluno e um semestre para
+        visualizar a grade.</div>
+    </ng-template>
+
+
+  </div>
