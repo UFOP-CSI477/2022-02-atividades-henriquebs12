@@ -33,6 +33,6 @@ Nenhuma além das restrições técnicas e de tempo. O sistema foi desenvolvido 
 
 ### 5. Referências
 
-[Node.js](https://nodejs.org/en)
-[Angular Material](https://material.angular.io/)
-[Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [Node.js](https://nodejs.org/en)
+- [Angular Material](https://material.angular.io/)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
