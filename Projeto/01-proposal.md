@@ -19,6 +19,7 @@ De uma plataforma de gestão de disciplinas cursadas em um semestre e da recomen
 ### 2. Escopo
 
 - CRUD de Alunos, Disciplinas, Semestres, Linhas e Horários (tanto de aula quanto de horários de partida dos ônibus).
+- Recomendação: o sistema de recomendação compara os horários das disciplinas que o aluno está cursando em um determinado semestre com os horários de partida dos ônibus. Ele recomenda, para cada disciplina da grade, a melhor linha. A melhor linha é decidida usando um valor simbólico de 40 minutos, que é o tempo em média que os ônibus gastam do ponto inicial ao ponto da UFOP. Idealmente, haveria um "ponto de controle", e a variável inclusive pode ser cadastrada no front-end, mas não foi possível implementa-la devido a limitações de tempo e conhecimento. A ideia era que cada linha tivesse um ponto de controle diferente, que representa o tempo em minutos que cada linha gasta até o ponto da minha casa, chamado de "Ponto A - Bitus". Ao considerar isso, as recomendações ficariam mais precisas.
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
