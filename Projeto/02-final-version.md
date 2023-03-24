@@ -27,6 +27,9 @@ O novo escopo do trabalho consiste em uma plataforma que faz a gestão de discip
 Front-end. Como foram poucas aulas, tive muita dificuldade em implementar o front-end. Tive que pedir ajuda no último dia para conseguir entender meus erros e poder conserta-los em tempo hábil. Outra dificuldade foi trabalhar com um projeto relativamente simples, mas com uma organização complexa de grandes projetos. Muitos componentes e pastas fazer você se perder com frequência, o que pode ser ruim para projetos pequenos.
 
 ### 5. Instruções para instalação e execução
+** Devido ao fato de ter tído múltiplos erros para subir a versão final, estou enviando um arquivo .zip de garantia até que eu resolva isso:
+https://drive.google.com/file/d/1Ed9CbZJmDx-bJjo_mh48YsVlct1XimPO/view?usp=share_link
+
 [INSTALAÇÃO SERVER]
 cd server
 npm install
