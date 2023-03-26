@@ -1,10 +1,10 @@
 # Sistema de Controle de Doação de Sangue
 
 
-# Informações sobre o server
+### Informações sobre o server
 O servidor foi feito usando node.js com as mesmas bibliotecas usadas em sala de aula.
 
-# Informações sobre o client
+### Informações sobre o client
 O front-end desse projeto foi criado usando o [Refine](https://github.com/pankod/refine). Ele é uma estrutura baseada em React que permite o desenvolvimento rápido de aplicativos da web, especialmente de CRUD's.
 
 ### Iniciar o servidor de desenvolvimento (tanto server quanto client):
