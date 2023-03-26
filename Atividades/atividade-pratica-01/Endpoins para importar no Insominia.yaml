@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2023-03-26T16:05:53.486Z
+__export_date: 2023-03-26T23:01:13.234Z
 __export_source: insomnia.desktop.app:v2023.1.0
 resources:
   - _id: req_9588516bc1684719a73339f09f4a6703
@@ -37,9 +37,9 @@ resources:
     _type: request
   - _id: fld_dd54e972ee9e4a9d997cbecdba2ae38f
     parentId: wrk_8195735459d047b581f21740dbf709ef
-    modified: 1679796097502
+    modified: 1679865584585
     created: 1679796097502
-    name: Locais de Doação
+    name: Locais de Coleta
     description: ""
     environment: {}
     environmentPropertyOrder: null
@@ -55,9 +55,9 @@ resources:
     _type: workspace
   - _id: req_48237100a54a4f70b664af89f0c0d48f
     parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
-    modified: 1679796408250
+    modified: 1679866386294
     created: 1679796388414
-    url: localhost:3333/locais-coleta/
+    url: localhost:3333/locais-coleta
     name: Get All Locais de Coleta
     description: ""
     method: GET
@@ -74,11 +74,32 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
+  - _id: req_67f19e536e94438880119edf05225114
+    parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
+    modified: 1679858656394
+    created: 1679858642962
+    url: localhost:3333/locais-coleta/3
+    name: Get All Locais de Coleta By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679796022915.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_c22a912a471f4494be44f3c7b7c5b9f2
     parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
-    modified: 1679797130722
+    modified: 1679858691424
     created: 1679797071565
-    url: localhost:3333/locais-coleta/1
+    url: localhost:3333/locais-coleta/3
     name: Update Local de Coleta
     description: ""
     method: PUT
@@ -86,7 +107,7 @@ resources:
       mimeType: application/json
       text: |-
         {
-          "nome": "Novo nome do local de coleta",
+          "nome": "Novo nome do local de coleta Novo",
           "rua": "Nova rua",
           "numero": "123",
           "complemento": "Campo opcional",
@@ -462,9 +483,9 @@ resources:
     _type: request
   - _id: req_6fd672f028b542639d99c25d2b422a67
     parentId: fld_e3ee928fd39b4e45b6287d84556e9d1f
-    modified: 1679797926821
+    modified: 1679869561917
     created: 1679797683907
-    url: localhost:3333/doacoes/1324
+    url: localhost:3333/doacoes/1
     name: Get Doação By Id
     description: ""
     method: GET
@@ -573,7 +594,7 @@ resources:
     _type: request_group
   - _id: req_f461b94d9cfb4ea1a26e0f770e4a86bf
     parentId: fld_10ad86286cf547d283194beeaac07795
-    modified: 1679792546988
+    modified: 1679864648759
     created: 1679792511358
     url: localhost:3333/cidades/
     name: Get All Cidades
@@ -584,6 +605,27 @@ resources:
     headers: []
     authentication: {}
     metaSortKey: -1679791798055
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3d62e9b5df124c258ac2a1f7e690842d
+    parentId: fld_10ad86286cf547d283194beeaac07795
+    modified: 1679864667688
+    created: 1679792593923
+    url: localhost:3333/cidades/2
+    name: Get Cidade By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679791561149.875
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
@@ -621,19 +663,19 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_3d62e9b5df124c258ac2a1f7e690842d
+  - _id: req_21dccfa863b74b9b9ac1e53b774853f6
     parentId: fld_10ad86286cf547d283194beeaac07795
-    modified: 1679792899391
-    created: 1679792593923
+    modified: 1679864674829
+    created: 1679864660295
     url: localhost:3333/cidades/2
-    name: Get Cidade By Id
+    name: Delete Cidade
     description: ""
     method: DELETE
     body: {}
     parameters: []
     headers: []
     authentication: {}
-    metaSortKey: -1679790850434.5
+    metaSortKey: -1679790376624.25
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true

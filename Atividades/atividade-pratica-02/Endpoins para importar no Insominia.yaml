@@ -1,0 +1,844 @@
+_type: export
+__export_format: 4
+__export_date: 2023-03-26T23:01:13.234Z
+__export_source: insomnia.desktop.app:v2023.1.0
+resources:
+  - _id: req_9588516bc1684719a73339f09f4a6703
+    parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
+    modified: 1679796394660
+    created: 1679796100432
+    url: localhost:3333/locais-coleta/
+    name: Create Local de Coleta
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Promoção de Saúde",
+          "rua": "Rua dos Testes",
+          "numero": "123",
+          "complemento": "Sala 101",
+          "cidade_id": 1
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679796100432
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_dd54e972ee9e4a9d997cbecdba2ae38f
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679865584585
+    created: 1679796097502
+    name: Locais de Coleta
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1679796097502
+    _type: request_group
+  - _id: wrk_8195735459d047b581f21740dbf709ef
+    parentId: null
+    modified: 1679784531910
+    created: 1679784531910
+    name: Banco Sanguíneo
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_48237100a54a4f70b664af89f0c0d48f
+    parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
+    modified: 1679866386294
+    created: 1679796388414
+    url: localhost:3333/locais-coleta
+    name: Get All Locais de Coleta
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679796038418.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_67f19e536e94438880119edf05225114
+    parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
+    modified: 1679858656394
+    created: 1679858642962
+    url: localhost:3333/locais-coleta/3
+    name: Get All Locais de Coleta By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679796022915.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c22a912a471f4494be44f3c7b7c5b9f2
+    parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
+    modified: 1679858691424
+    created: 1679797071565
+    url: localhost:3333/locais-coleta/3
+    name: Update Local de Coleta
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Novo nome do local de coleta Novo",
+          "rua": "Nova rua",
+          "numero": "123",
+          "complemento": "Campo opcional",
+          "cidade_id": 1
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679796007411.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e06c04fd529d4062a5514ad0f525c62f
+    parentId: fld_dd54e972ee9e4a9d997cbecdba2ae38f
+    modified: 1679797432140
+    created: 1679797280758
+    url: localhost:3333/locais-coleta/2
+    name: Delete Local Coleta
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679796007361.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_948824a1d7d04bfbb374f9ade47bcc82
+    parentId: fld_e068a6d8c1db4481ab1cac10361c6d10
+    modified: 1679794425264
+    created: 1679793653687
+    url: localhost:3333/tipos-sanguineos/
+    name: Create Tipo Sanguíneo
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "tipo": "O",
+          "fator": "+"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679792179344
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_e068a6d8c1db4481ab1cac10361c6d10
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679793537069
+    created: 1679793537069
+    name: Tipos Sanguíneos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1679793537069
+    _type: request_group
+  - _id: req_6bc2c09cffa542edb02530eb32d54e65
+    parentId: fld_e068a6d8c1db4481ab1cac10361c6d10
+    modified: 1679793908587
+    created: 1679793750141
+    url: localhost:3333/tipos-sanguineos/
+    name: Get All Tipos Sanguíneos
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679791988724.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4430083003ff40c78760ea0db3a8d30d
+    parentId: fld_e068a6d8c1db4481ab1cac10361c6d10
+    modified: 1679794082509
+    created: 1679794040496
+    url: localhost:3333/tipos-sanguineos/1
+    name: Get Tipo Sanguíneo By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679791893414.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f43331cc10894a0995c4ce3bacb51988
+    parentId: fld_e068a6d8c1db4481ab1cac10361c6d10
+    modified: 1679794287076
+    created: 1679794195620
+    url: localhost:3333/tipos-sanguineos/1
+    name: Update Tipo Sanguíneo
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "tipo": "AB",
+          "fator": "Negativo"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679791893364.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8314f8ea16394ba68877332f1d3d3a3d
+    parentId: fld_e068a6d8c1db4481ab1cac10361c6d10
+    modified: 1679794690063
+    created: 1679794429822
+    url: localhost:3333/tipos-sanguineos/2
+    name: Delete Tipo Sanguíneo
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679791893314.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f9c612ef90ee4842b547785e6dbd9f3b
+    parentId: fld_712501eb126644acb086b3ae313980e3
+    modified: 1679795877961
+    created: 1679793392980
+    url: localhost:3333/pessoas/
+    name: Create Pessoa
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "João da Silva 4",
+          "rua": "Rua das Flores",
+          "numero": "123",
+          "complemento": "Apto 101",
+          "documento": "123.456.789-00",
+          "cidade_id": 1,
+          "tipo_id": 4
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679792560583
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_712501eb126644acb086b3ae313980e3
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679793385893
+    created: 1679793385893
+    name: Pessoas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1679793385893
+    _type: request_group
+  - _id: req_33ba2a9eb4814eaf86b3b463557b1619
+    parentId: fld_712501eb126644acb086b3ae313980e3
+    modified: 1679794774467
+    created: 1679794765275
+    url: localhost:3333/pessoas/
+    name: Get All Pessoas
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679792369963.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_af20216f2d1f44be9cc559162481bca5
+    parentId: fld_712501eb126644acb086b3ae313980e3
+    modified: 1679795565196
+    created: 1679795557704
+    url: localhost:3333/pessoas/1
+    name: Get Pessoa By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679792274653.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2e01cdfadc014d4a999eb513f41bc85e
+    parentId: fld_712501eb126644acb086b3ae313980e3
+    modified: 1679795748625
+    created: 1679795609186
+    url: localhost:3333/pessoas/1
+    name: Update Pessoa
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Nome atualizado",
+          "rua": "Rua dos Testes",
+          "numero": "123",
+          "complemento": "Opcional",
+          "documento": "123.456.789-00",
+          "cidade_id": 1,
+          "tipo_id": 4
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679792274603.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_93078f7633aa46b29913521a1de6e848
+    parentId: fld_712501eb126644acb086b3ae313980e3
+    modified: 1679795884414
+    created: 1679795862155
+    url: localhost:3333/pessoas/3444
+    name: Delete Pessoa
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679792226973.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1dfdf449254d464cabc77904b72625bf
+    parentId: fld_e3ee928fd39b4e45b6287d84556e9d1f
+    modified: 1679797619449
+    created: 1679795976405
+    url: localhost:3333/doacoes/
+    name: Create Doação
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "pessoa_id": 1,
+          "local_id": 3,
+          "data": "2022-03-25T12:00:00.000Z"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679795976405
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_e3ee928fd39b4e45b6287d84556e9d1f
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679793320297
+    created: 1679793320297
+    name: Doações
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1679793320297
+    _type: request_group
+  - _id: req_b58c141fced94b1396ceca9c75d147e3
+    parentId: fld_e3ee928fd39b4e45b6287d84556e9d1f
+    modified: 1679797622917
+    created: 1679797614997
+    url: localhost:3333/doacoes/
+    name: Get All Doações
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679794268494
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6fd672f028b542639d99c25d2b422a67
+    parentId: fld_e3ee928fd39b4e45b6287d84556e9d1f
+    modified: 1679869561917
+    created: 1679797683907
+    url: localhost:3333/doacoes/1
+    name: Get Doação By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679793414538.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_698dce1689f3424d85e7458d31b82dc9
+    parentId: fld_e3ee928fd39b4e45b6287d84556e9d1f
+    modified: 1679798268813
+    created: 1679798239974
+    url: localhost:3333/doacoes/1
+    name: Update Doação
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "pessoa_id": 2,
+          "local_id": 3,
+          "data": "2022-05-01T08:30:00.000Z"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679792987560.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_372070b8b14742afa4b87e4124dbbe85
+    parentId: fld_e3ee928fd39b4e45b6287d84556e9d1f
+    modified: 1679798483280
+    created: 1679798444489
+    url: localhost:3333/doacoes/2
+    name: Delete Doação
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679792774071.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d0a0ab5179384eb685db5427a70e9a89
+    parentId: fld_10ad86286cf547d283194beeaac07795
+    modified: 1679792888209
+    created: 1679791798105
+    url: localhost:3333/cidades/
+    name: Create Cidade
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Rio de Janeiro",
+          "estado_id": 3
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679791798105
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_10ad86286cf547d283194beeaac07795
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679791796536
+    created: 1679791796536
+    name: Cidades
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1679791796536
+    _type: request_group
+  - _id: req_f461b94d9cfb4ea1a26e0f770e4a86bf
+    parentId: fld_10ad86286cf547d283194beeaac07795
+    modified: 1679864648759
+    created: 1679792511358
+    url: localhost:3333/cidades/
+    name: Get All Cidades
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679791798055
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3d62e9b5df124c258ac2a1f7e690842d
+    parentId: fld_10ad86286cf547d283194beeaac07795
+    modified: 1679864667688
+    created: 1679792593923
+    url: localhost:3333/cidades/2
+    name: Get Cidade By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679791561149.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a9621bcc83ce46a499b627e291fc6f80
+    parentId: fld_10ad86286cf547d283194beeaac07795
+    modified: 1679793161084
+    created: 1679793080741
+    url: localhost:3333/cidades/1
+    name: Update Cidade
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Nova Cidade",
+          "estado_id": 2
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679791324244.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_21dccfa863b74b9b9ac1e53b774853f6
+    parentId: fld_10ad86286cf547d283194beeaac07795
+    modified: 1679864674829
+    created: 1679864660295
+    url: localhost:3333/cidades/2
+    name: Delete Cidade
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679790376624.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_01185ccb5a3e4051bf2a4ce08af92d62
+    parentId: fld_4243ef00db2d42d189c7e8503762b4d0
+    modified: 1679792147054
+    created: 1679789902814
+    url: localhost:3333/estados/
+    name: Create Estado
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Rio de Janeiro",
+          "sigla": "RJ"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679789902814
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_4243ef00db2d42d189c7e8503762b4d0
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679791780786
+    created: 1679791780786
+    name: Estados
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1679791780786
+    _type: request_group
+  - _id: req_e129faa9b99f438dbf546a9dd1ae1429
+    parentId: fld_4243ef00db2d42d189c7e8503762b4d0
+    modified: 1679791785032
+    created: 1679790310819
+    url: localhost:3333/estados/
+    name: Get All Estados
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679789902764
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ea6b9801efbc47bd9c103681aec76749
+    parentId: fld_4243ef00db2d42d189c7e8503762b4d0
+    modified: 1679791786817
+    created: 1679791434330
+    url: localhost:3333/estados/1
+    name: Get Estado By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679789902714
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f1f7c11653c4462ea8b0dd9cd3cd511d
+    parentId: fld_4243ef00db2d42d189c7e8503762b4d0
+    modified: 1679791788393
+    created: 1679791604234
+    url: localhost:3333/estados/1
+    name: Update Estado
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 1,
+        	"nome": "Rio de Janeiro",
+        	"sigla": "RJ"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1679789902664
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7100f88192eb464fb27054a17832daf2
+    parentId: fld_4243ef00db2d42d189c7e8503762b4d0
+    modified: 1679791789806
+    created: 1679791761238
+    url: localhost:3333/estados/1
+    name: Delete Estado
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679789902614
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_490155d8da6f88c861549a506a0835d70afad025
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679784531912
+    created: 1679784531912
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1679784531912
+    _type: environment
+  - _id: jar_490155d8da6f88c861549a506a0835d70afad025
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679784531913
+    created: 1679784531913
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_7b59096f8a9c44808fc1cb152e0e3d6b
+    parentId: wrk_8195735459d047b581f21740dbf709ef
+    modified: 1679784531910
+    created: 1679784531910
+    fileName: Banco Sanguíneo
+    contents: ""
+    contentType: yaml
+    _type: api_spec
