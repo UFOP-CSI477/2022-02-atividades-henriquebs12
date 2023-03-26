@@ -20,7 +20,7 @@ O front-end desse projeto foi criado usando o [Refine](https://github.com/pankod
 
 ## Referências
 
-- **Refine** [Docs]([https://refine.dev/docs/core/providers/data-provider/#overview](https://refine.dev/docs/))
+- **Refine** [Docs]([https://refine.dev/docs/core/providers/data-provider/#overview](https://refine.dev/docs/)
 - **REST Data Provider** [Docs](https://refine.dev/docs/core/providers/data-provider/#overview)
 - **Chakra UI** [Docs](https://refine.dev/docs/)
 - **Inferencer** [Docs](https://refine.dev/docs/packages/documentation/inferencer)
