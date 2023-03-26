@@ -10,11 +10,7 @@
 
 ## [Projeto final:](./Projeto/README.md)
 
-Plataforma para criação de múltiplos jogos educacionais para alunos do Ensino Fundamental. A ideia é construir um sistema que permita o usuário (professor) criar jogos personalizados que façam sentido com o conteúdo que está sendo dado (por exemplo animais, cores, símbolos, lugares, etc). 
-
-Ao publicar um jogo, ele fica disponível para os alunos realizarem através de login ou de um link externo. Ao realizar o jogo, as estatísticas das jogadas são armazenadas para que o professor possa consultar o desempenho individual dos alunos no sistema.
-
-Tentarei implementar pelo menos o fluxo de criação de um Jogo da Memória. Se ainda sobrar tempo, implementarei também um jogo simples do tipo Ligue as Colunas.
+O novo escopo do trabalho consiste em uma plataforma que faz a gestão de disciplinas cursadas em um semestre, além de alunos, semestres e horários de aula. Além disso, o sistema também permite o cadastro de linhas de ônibus e os horários de partida deles. No final, a ideia é mostrar de forma amigável ao usuário um cronograma geral de aulas, que mostre as disciplinas que o aluno está cursando em um determinado semestre, bem como a sala e uma recomendação de melhor linha de ônibus, para que ele possa pegar uma das linhas de João Monlevade (ou qualquer outra cadastrada) e chegar sem atrasos.
 
 [Atualização]
 O escopo do projeto foi atualizado, favor verificar novos requisitos na pasta Projeto.
