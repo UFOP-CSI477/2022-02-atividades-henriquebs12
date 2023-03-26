@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Estado {
+  id         Int       @id @default(autoincrement())
+  nome       String
+  sigla      String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  cidades    Cidade[]
+}
+
+model Cidade {
+  id          Int       @id @default(autoincrement())
+  nome        String
+  estado_id   Int
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  estado      Estado    @relation(fields: [estado_id], references: [id])
+  locais_coleta LocaisColeta[]
+  pessoas     Pessoa[]
+}
+
+model LocaisColeta {
+  id           Int       @id @default(autoincrement())
+  nome         String
+  rua          String
+  numero       String
+  complemento  String
+  cidade_id    Int
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+  cidade       Cidade    @relation(fields: [cidade_id], references: [id])
+  doacoes      Doacao[]
+}
+
+model Doacao {
+  id         Int       @id @default(autoincrement())
+  pessoa_id  Int
+  local_id   Int
+  data       DateTime
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  pessoa     Pessoa    @relation(fields: [pessoa_id], references: [id])
+  local      LocaisColeta @relation(fields: [local_id], references: [id])
+}
+
+model Pessoa {
+  id           Int       @id @default(autoincrement())
+  nome         String
+  rua          String
+  numero       String
+  complemento  String
+  documento    String
+  cidade_id    Int
+  tipo_id      Int
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+  cidade       Cidade    @relation(fields: [cidade_id], references: [id])
+  tipo_sanguineo TipoSanguineo @relation(fields: [tipo_id], references: [id])
+  doacoes      Doacao[]
+}
+
+model TipoSanguineo {
+  id         Int       @id @default(autoincrement())
+  tipo       String
+  fator      String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  pessoas    Pessoa[]
+}
