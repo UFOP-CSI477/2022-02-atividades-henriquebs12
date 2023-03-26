@@ -2,35 +2,23 @@
 
 <br/>
 
-O front-end desse projeto foi criada usando o Refine [refine](https://github.com/pankod/refine) project was generated with [superplate](https://github.com/pankod/refine).
+O front-end desse projeto foi criado usando o [Refine](https://github.com/pankod/refine). Ele é uma estrutura baseada em React que permite o desenvolvimento rápido de aplicativos da web, especialmente de CRUD's.
 
-## Getting Started
 
-**refine** is a React-based framework for building data-intensive applications in no time ✨
 
-Refine offers lots of out-of-the box functionality for rapid development, without compromising extreme customizability. Use-cases include, but are not limited to admin panels, B2B applications and dashboards.
-
-## Available Scripts
-
-### Running the development server.
+### Iniciar o servidor de desenvolvimento.
 
 ```bash
     npm run dev
 ```
 
-### Building for production.
-
-```bash
-    npm run build
-```
-
-### Running the production server.
+### Iniciar o servidor de produção.
 
 ```bash
     npm run start
 ```
 
-## Learn More
+## Referências
 
 To learn more about **refine**, please check out the [Documentation](https://refine.dev/docs)
 
